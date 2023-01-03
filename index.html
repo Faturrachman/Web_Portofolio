@@ -8,13 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <!-- BOOTSTRAP ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="gaya.css" />
   </head>
 
   <body id="home">
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top" data-aos="fade-down" data-aos-duration="1000">
       <div class="container">
         <a class="navbar-brand" href="#">Portofolio Faturrachman</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +43,7 @@
     <!-- akhir nav bar -->
 
     <!-- jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" data-aos="fade-down" data-aos-duration="2000">
       <img src="img/pp.jpg" alt="Faturrachman" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Faturrachman</h1>
       <p class="lead">Mahasiswa Universitas Kuningan || Sistem Informasi</p>
@@ -57,7 +59,7 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-duration="1500">
         <div class="row text-center mb-5">
           <div class="col">
             <h2>About Me</h2>
@@ -67,7 +69,7 @@
           <div class="col-md-5">
             <p>Nama lengkap saya Faturrachman. Saya anak pertama dari dua bersaudara. Kalo temen-temen ingin mengenal saya lebih dalam, boleh follow media sosialnya. Sok dicek aja medsosnya.</p>
           </div>
-          <div class="col-md-5">Saya sekarang berkuliah di salah satu universitas swasta di Kuningan. Saya mengambil Prodi Sistem Informmasi Fakultas Ilmu Komputer Universitas Kuningan.</div>
+          <div class="col-md-5">Saya sekarang berkuliah di salah satu universitas swasta di Kuningan. Saya mengambil Prodi Sistem Informasi Fakultas Ilmu Komputer Universitas Kuningan.</div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -88,7 +90,7 @@
             <h2>My Project</h2>
           </div>
           <div class="row justify-content-center">
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-right" data-aos-duration="1100">
               <div class="card">
                 <img src="img/gng1.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -98,7 +100,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-right" data-aos-duration="1100">
               <div class="card">
                 <img src="img/gng.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -108,7 +110,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-right" data-aos-duration="1100">
               <div class="card">
                 <img src="img/gng2.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -118,7 +120,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-right" data-aos-duration="1100">
               <div class="card">
                 <img src="img/gng3.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -128,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-right" data-aos-duration="1100">
               <div class="card">
                 <img src="img/gng4.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -167,15 +169,15 @@
                 </div>
                 <div class="mb-3">
                   <label for="nama" class="form-label">Nama Lengkap :</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email :</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" />
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required />
                 </div>
                 <div class="mb-3">
                   <label for="pesan" class="form-label">Pesan :</label>
-                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                  <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
@@ -208,6 +210,11 @@
     <!-- AKHIR FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbx4xa2we-USZ7Q9oYh9luHmGqCgG7PxK_ySvs4lDeKWY3dKj0gggpSmTGu4ZG-f9DD7/exec";
